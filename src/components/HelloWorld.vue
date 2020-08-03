@@ -1,7 +1,6 @@
 <template>
   <div class="hello" :style="cssProps">
     <p>Something is not quite right...</p>
-    <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
         <a
