@@ -1,28 +1,21 @@
 module.exports = {
   root: true,
+
   env: {
-    node: true,
+    node: true
   },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/airbnb',
-  ],
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
+
+  extends: ["plugin:vue/essential", "prettier", "prettier/vue"],
+
+  plugins: ["vue"],
+
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "no-console": "off",
+    "no-debugger": "off",
+    "no-unused-vars": ["error", { ignoreRestSiblings: true }]
   },
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
-      ],
-      env: {
-        jest: true,
-      },
-    },
-  ],
+
+  parserOptions: {
+    parser: "babel-eslint"
+  }
 };

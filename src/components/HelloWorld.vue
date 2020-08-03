@@ -1,10 +1,6 @@
 <template>
-  <div class="hello" :style='cssProps'>
-    <p>
-      For a guide and recipes on how to configure / customize this project,
-      <br />check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
+  <div class="hello" :style="cssProps">
+    <p>Something is not quite right...</p>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -12,30 +8,28 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
           target="_blank"
           rel="noopener"
-          >babel</a>
+        >babel</a>
       </li>
       <li>
         <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex"
           target="_blank"
           rel="noopener"
-          >vuex</a>
+        >vuex</a>
       </li>
       <li>
         <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
           target="_blank"
           rel="noopener"
-          >eslint
-          </a>
+        >eslint</a>
       </li>
       <li>
         <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest"
           target="_blank"
           rel="noopener"
-          >unit-jest</a
-        >
+        >unit-jest</a>
       </li>
     </ul>
     <h3>Essential Links</h3>
@@ -65,8 +59,11 @@
         <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
       </li>
       <li>
-        <a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener"
-          >vue-devtools</a>
+        <a
+          href="https://github.com/vuejs/vue-devtools#vue-devtools"
+          target="_blank"
+          rel="noopener"
+        >vue-devtools</a>
       </li>
       <li>
         <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a>
@@ -80,17 +77,17 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     color: {
       type: String,
-      default: '',
+      default: "",
     },
   },
   computed: {
     cssProps() {
       return {
-        '--color': this.color,
+        "--color": this.color,
       };
     },
   },
