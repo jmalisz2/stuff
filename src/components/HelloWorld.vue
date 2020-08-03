@@ -97,6 +97,7 @@ export default {
 h3 {
   background-color: red;
   margin: 40px 0 0;
+  background-color: purple;
 }
 ul {
   list-style-type: none;
