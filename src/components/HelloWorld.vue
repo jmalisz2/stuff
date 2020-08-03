@@ -1,6 +1,6 @@
 <template>
   <div class="hello" :style="cssProps">
-    <p>Something is not quite right...</p>
+    <p>Something is not quite right... or maybe it is ?</p>
     <ul>
       <li>
         <a
